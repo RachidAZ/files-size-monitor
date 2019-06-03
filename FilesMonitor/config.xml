@@ -1,0 +1,28 @@
+<!-- Created by Rachid AZGAOU @ Itron 2018 -->
+ <SaturneRAZ>
+<Servers>
+  
+  <server>172.24.80.45</server>
+  <server>172.24.80.40</server>
+  <server>172.24.80.52</server>
+  <server>172.24.80.54</server>
+  <server>172.24.80.55</server>
+  <server>172.24.80.56</server>
+  <server>172.24.80.57</server>
+	 
+</Servers>
+
+
+<!-- The Size must be in Mb  -->
+<Size>20</Size>
+
+<!-- defaultLogSaturne = \\c$\\Asais\\Saturne\\\\CommunicationServer\\log\\"+[@TodayDate] -->
+<!-- The Path format must be like above , use the keyword [@TodayDate] if you would like to have today date (format yyyyMMdd)   -->
+<!-- Server + Path =  \\172.24.80.55\c$\Asais\Saturne\CommunicationServer\Log\20180208   -->
+<Directory> \\c$\Asais\Saturne\CommunicationServer\log\[@TodayDate]  </Directory>
+
+<!-- The .bat file to execute    -->
+<Execute> alert.bat  </Execute>
+
+
+</SaturneRAZ>
